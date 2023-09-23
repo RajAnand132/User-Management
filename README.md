@@ -92,11 +92,17 @@ The database removes the user data associated with the specified userId.
 
 ## Key Components:
 
-1. User Entity: The project defines a User entity class representing the user data with appropriate attributes. This entity is managed using Spring Data JPA.
+**1. User Entity:**
 
-2. UserRepository: A repository interface is created for User entities, allowing for database operations such as saving, retrieving, updating, and deleting user records. Spring Data JPA generates the implementation automatically.
+The project defines a User entity class representing the user data with appropriate attributes. This entity is managed using Spring Data JPA.
 
-3. UserController: This REST controller handles HTTP requests related to user management. It provides the following endpoints:
+**2. UserRepository:**
+
+ A repository interface is created for User entities, allowing for database operations such as saving, retrieving, updating, and deleting user records. Spring Data JPA generates the implementation automatically.
+
+**3. UserController:**
+
+ This REST controller handles HTTP requests related to user management. It provides the following endpoints:
 
 - /api/api/users: Adds a new user to the system.
 - /api/user/{userId}: Retrieves user information by User ID.
@@ -104,7 +110,9 @@ The database removes the user data associated with the specified userId.
 - /api/UserInfo/userId/{userId}: Updates user information based on User ID.
 - /api/user/id/{userId}: Deletes a user by User ID.
 
-4. Database Configuration: The project uses database with configuration settings in the application.properties file. You can easily switch to a different database by modifying the configuration.
+**4. Database Configuration:**
+
+ The project uses database with configuration settings in the application.properties file. You can easily switch to a different database by modifying the configuration.
 
 **Usage:**
 
